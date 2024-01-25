@@ -117,7 +117,7 @@ loader.load('./model/model.gltf', function (gltf) {
 // load panorama HDR image
 new THREE.RGBELoader()
   .setDataType(THREE.UnsignedByteType)
-  .setPath('/textures/')
+  .setPath('./textures/')
   .load('20.hdr', function (texture) {
     var pmremGenerator = new THREE.PMREMGenerator(renderer);
     pmremGenerator.compileEquirectangularShader();
